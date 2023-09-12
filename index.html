@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="nav-bar">
+        <ul class="nav-items">
+            <li><a href="#introduction">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="introduction">
+        <div id="intro-message">
+            <h3> Hello, I'm Robert</h3>
+            <h1>
+                Automation tester and
+                <br>
+                Front-End developer trainee
+                <br>
+                And this is my portfolio
+            </h1>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My SKILLS:</h2>
+        <div class="row">
+            <div class="skill" id="languages">
+                <img src="images/write-code.png" width="70" height="70px" >
+                <h3>PROGRAMMING LANGUAGES:</h3>
+                <ul class="card-list">
+                    <li>Java</li>
+                    <li>C/C++</li>
+                    <li>Python</li>
+                    <li>TypeScript</li>
+                </ul>
+            </div>
+
+            <div class="skill" id="frameworks">
+                <img src="images/frameworks.png" width="70" height="70">
+                <h3> FRAMEWORKS: </h3>
+                <ul class="card-list">
+                    <li>Spring/SpringBoot</li>
+                    <li>Arduino Libraries</li>
+                    <li>Android Libraries</li>
+                    <li>Angular</li>
+                </ul>
+            </div>
+
+            <div class="skill" id="databases">
+                <img src="images/database.png" width="60" height="60">
+                <h3> DATABASES: </h3>
+                <ul class="card-list">
+                    <li>MySQL</li>
+                    <li>Firebase Firestore</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="project-title">My recent projects:</h2>
+        <div class="projects-wrapper">
+            <div class="project-card" id="bank-project">
+                <h3 class="project-title"> Banking System Back-End</h3>
+                <div class="project-content" id="bank-system-content"></div>
+                <div class="project-description">
+                    <p> This project has been created using Java/SpringBoot and MySQL and it has the following functionalities:</p>
+                    <ul class="card-list">
+                        <li>Have the possibility to login / logout</li>
+                        <li>Be able to have multiple accounts in different currencies</li>
+                        <li>Be able to see the available balance for all the accounts</li>
+                        <li>Be able to exchange money from a currency to another (hardcoded exchange rate)</li>
+                        <li>Be able to make a transaction to another user</li>
+                        <li>Be able to request money from another user</li>
+                        <li>Be able to see the transactions history (income/ outcome)</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/robertpgu/Bank-System">
+                    <button>See The Project</button>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title"> Journal Android App</h3>
+                <div class="project-content" id="journal-project-content"></div>
+                <div class="project-description">
+                    <p> This project is an android application written in Java which has the following functionalities:</p>
+                    <ul class="card-list">
+                        <li>Have the possibility to login / logout / sign up</li>
+                        <li>Add journal posts (title, photo, description)</li>
+                        <li>View the list of posts</li>
+                        <li>The data is saved using Google Firebase Firestore</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/robertpgu/JournalApp">
+                    <button>See The Project</button>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title"> Fullstack Website for Prosumers and Energy Companies</h3>
+                <div class="project-content" id="prosumers-project-content"></div>
+                <div class="project-description">
+                    <p> This project is a fullstack web application written in Java/SpringBoot and TypeScript/Angular which has the following functionalities:</p>
+                    <ul class="card-list">
+                        <li>Two types of users: Company and Prosumers</li>
+                        <li>Have the possibility to login / logout / sign up</li>
+                        <li>Add posts</li>
+                        <li>View the energy generated by the Prosumer's solar panels</li>
+                        <li>View the list of posts created by the other users</li>
+                        <li>The back-end receives information from an IoT system through HTTP requests</li>
+                    </ul>
+                </div>
+                <a href="https://youtu.be/A-B3iyRjGY8">
+                    <button>See The Project</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <form id="contact">
+        <h2>CONTACT ME</h2>
+
+        <label>Your name:
+            <br>
+            <input type="text" name="name">
+        </label>
+
+        <br>
+
+        <label>Email:
+            <br>
+            <input type="text" name="email">
+        </label>
+
+        <br>
+
+        <label>Subject:
+            <br>
+            <input type="text" name="subject">
+        </label>
+
+        <br>
+
+        <label>Message:
+            <br>
+            <textarea id="message" name="message" placeholder="Your message"></textarea>
+        </label>
+
+        <button type="submit" id="send">SUBMIT</button>
+    </form>
+</main>
+
+<footer>
+    <p>Author: Robert Podgorencu</p>
+</footer>
+
+</body>
+</html>
